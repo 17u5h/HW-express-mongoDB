@@ -22,7 +22,7 @@ mongoose.connect(DB_URL, err => {
 app.use(bodyParser.json())
 app.use(userRouter)
 app.use(bookRouter)
-app.use(cors)
+// app.use(cors)
 app.use(APIlogger)
 
 app.get('/', (req, res) => {
